@@ -102,3 +102,11 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
++ Revision: 813689
+- Import texlive-pedigree-perl
+- Import texlive-pedigree-perl
+
