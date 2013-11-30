@@ -1,12 +1,12 @@
-# revision 26313
+# revision 31990
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pedigree/pedigree-perl
-# catalog-date 2012-04-14 20:51:11 +0200
+# catalog-date 2012-05-31 18:08:53 +0200
 # catalog-license gpl2
 # catalog-version 1.0
 Name:		texlive-pedigree-perl
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	Generate TeX pedigree files from CSV files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pedigree/pedigree-perl
@@ -48,6 +48,8 @@ Russian languages are supported).
 %{_texmfdistdir}/scripts/pedigree-perl/Pedigree/PersonNode.pm
 %{_texmfdistdir}/scripts/pedigree-perl/Pedigree/TwinsNode.pm
 %{_texmfdistdir}/scripts/pedigree-perl/pedigree.pl
+%doc %{_mandir}/man1/pedigree.1*
+%doc %{_texmfdistdir}/doc/man/man1/pedigree.man1.pdf
 %doc %{_texmfdistdir}/doc/support/pedigree-perl/LICENSE
 %doc %{_texmfdistdir}/doc/support/pedigree-perl/Makefile
 %doc %{_texmfdistdir}/doc/support/pedigree-perl/NEWS
@@ -87,7 +89,6 @@ Russian languages are supported).
 %doc %{_texmfdistdir}/doc/support/pedigree-perl/examples/sort2.csv
 %doc %{_texmfdistdir}/doc/support/pedigree-perl/examples/sort3.csv
 %doc %{_texmfdistdir}/doc/support/pedigree-perl/examples/twins.csv
-%doc %{_texmfdistdir}/doc/support/pedigree-perl/pedigree.1
 
 #-----------------------------------------------------------------------
 %prep
@@ -102,11 +103,6 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 813689
-- Import texlive-pedigree-perl
-- Import texlive-pedigree-perl
+mkdir -p %{buildroot}%{_mandir}/man1
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 
