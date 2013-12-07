@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-pedigree-perl
 Version:	1.0
-Release:	3
+Release:	4
 Summary:	Generate TeX pedigree files from CSV files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pedigree/pedigree-perl
