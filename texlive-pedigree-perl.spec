@@ -1,6 +1,6 @@
 Name:		texlive-pedigree-perl
 Version:	64227
-Release:	1
+Release:	2
 Summary:	Generate TeX pedigree files from CSV files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pedigree/pedigree-perl
