@@ -3,7 +3,7 @@ Version:	64227
 Release:	2
 Summary:	Generate TeX pedigree files from CSV files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pedigree/pedigree-perl
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pedigree/pedigree-perl
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pedigree-perl.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pedigree-perl.doc.r%{version}.tar.xz
