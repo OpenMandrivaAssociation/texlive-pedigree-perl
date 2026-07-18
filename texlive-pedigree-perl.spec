@@ -1,5 +1,6 @@
 %global tl_name pedigree-perl
 %global tl_revision 64227
+%global tl_bin_links pedigree:%{_texmfdistdir}/scripts/pedigree-perl/pedigree.pl
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -16,6 +17,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(pedigree-perl.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 This program generates TeX commands to typeset pedigrees -- either TeX
